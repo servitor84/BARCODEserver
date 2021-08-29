@@ -1,0 +1,37 @@
+Versionsgeschichte DOKinform BARCODEserver
+===================================================================
+
+20.0 (build 05830)    27.07.2021    WFs mit dem User in Konfig werden gelesen, andere nicht
+20.0 (build 05829)    26.07.2021     TIF docs are also processed if SearchMode has the entry "First". A new library is used for TIF docs.
+20.0 (build 05805)    21.05.2021    Jars + Versionen angepasst
+11.0 (build 05787)    03.09.2020    Wenn Barcode nicht gelesen werden kann, werden keine Barcodes geschrieben, damit die Korrektur in WF möglich ist
+11.0 (build 05786)    03.06.2020    Tempfile Name zurücksetzen - Um Fehler zu verhindern (has no physical document)
+11.0 (build 05785)    26.03.2020    if barcode has slash as part, then replace slash with empty symbol in the filename
+11.0 (build 05784)    25.02.2020    PWD Entschlüßelung
+11.0 (build 05783)    23.01.2020    Deleting PDF file from Temp-folder also in case when it's damaged. File name with GUID
+11.0 (build 05778)    20.01.2020    (WFCollectNode) node.getObjId() mit node.getObjGuid() in ELO 12 ersetzt
+11.0 (build 05777)    11.10.2019    DOKinform Lib für BC angepasst
+10.0 (build 05772)    08.07.2019    Profile vom selben Typ; zweites wird nicht betrachtet => behoben
+10.0 (build 05768)    12.02.2019    QRCode Lesen + Codes überspringen wenn RegEx enthalten/NICHT enthalten ist + Nur erste Seite lesen
+10.0 (build 05767)    14.05.2018    possibility - with the help of the definition of the characters in profile  BATCHREADER - to exclude barcodes
+10.0 (build 05766)    15.03.2018    weitere Bearbeitung von Page Nummerierung anzeigen/löschen
+10.0 (build 05765)    15.03.2018    pages number can be hided in the barcodes field when the coressponding property in config file (SchowPagesNrByKeywording) is true
+10.0 (build 05764)    15.03.2018    pages number as value of the field barcodes can be hided when the corresponding property in the config file (SchowPagesNrByKeywording) is true
+10.0 (build 05763)    20.02.2018    Adding configurator by build process
+10.0 (build 05762)    20.02.2018    Adding configurator by build process
+10.0 (build 05761)    17.11.2017    Checking version added
+9.0.0 (build 05756)    16.11.2017    use of  'pdfbox-app-1.8.2.jar '
+9.0.0 (build 05755)    16.11.2017    error occured by one workflow => forward to next workflow (doWork() - WorkflowWorker.java)
+9.0.0 (build 05754)    15.11.2017    arivato => di
+9.0.0 (build 05752)    07.09.2017    Fix: Txt and Sig file were not generated in SSM
+9.0.0 (build 05751)    07.09.2017    Using pdfbox instead of itext
+9.0.0 (build 05741)    19.06.2017    Reverted to itext-2.1.7
+9.0.0 (build 05740)    01.06.2017    Fix for bug report 2017-05-30: landscape pages were rendered in portrait mode in SSM profile
+9.0.0 (build 05739)    01.06.2017    Fix for bug report 2017-05-30: landscape pages were rendered in portrait mode in SSM profile
+9.0.0 (build 05738)    01.06.2017    Fix for bug report 2017-05-30: landscape pages were rendered in portrait mode in SSM profile
+9.0.0 (build 05718)    07.10.2016    ReadBarcode takes into account the SearchPages settings
+9.0.0 (build 05717)    19.09.2016    ReadBarcode reads Temporary Directory setting from config.properties. Added check for sord type when processing documents. Folders must not be processed
+9.0.0 (build 05716)    10.05.2016    Solved property setting 'ResultStatusOk'
+9.0.0 (build 05660)	24.06.2015	added build.xml
+9.0.0 (build 05672)	09.03.2016	Fixed issues with CreateSIG and CreateTXT (last working)
+9.0.0 (build 05703)	14.04.2016	Fixed issues with Error and Ok count +  dates without miliseconds New variant for SSM

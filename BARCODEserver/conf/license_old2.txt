@@ -1,0 +1,9 @@
+client=presentation license DE (654) - ELO Digital Office GmbH
+ELO-version=Professional
+ERP-system=--
+license-type=10 profiles
+product=DOKinform BARCODEserver for ELO
+ELO-key=presentation license DE (654) - ELO Digital Office GmbH
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=bb934dca1666279046a505a0ef6e535bd2f8fc58
+bytes1=120243c5182f6e56e189e87ee560f8be5719e8f3

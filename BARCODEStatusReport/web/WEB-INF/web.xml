@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <description>BARCODEserver by Arivato GmbH</description>
+    <display-name>BARCODEserver</display-name>
+    <servlet>
+        <description>Starts and stops the service</description>
+        <servlet-name>AgentServlet</servlet-name>
+        <servlet-class>de.di.barcodeserver.web.AgentServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+    <listener>
+        <listener-class>de.di.barcodeserver.web.AppServletContextListener</listener-class>
+    </listener>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>Protected Area</web-resource-name>
+            <url-pattern>/conf/*</url-pattern>            
+        </web-resource-collection>        
+        <auth-constraint>
+            <role-name>authenticated-user</role-name>
+        </auth-constraint>
+    </security-constraint>
+</web-app>

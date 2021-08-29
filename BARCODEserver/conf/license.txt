@@ -1,0 +1,9 @@
+client=presentation license
+ELO-version=Professional
+ERP-system=--
+license-type=10 profiles
+product=DOKinform BARCODEserver for ELO
+ELO-key=presentation license
+expiration-date=Fri Dec 31 00:00:00 CET 2100
+bytes2=d9790546d065d4ef5bc3789ddfc80e637d9abc1f
+bytes1=e41ad4053cd59f0cd385cc0419f15a2b55f60b9f

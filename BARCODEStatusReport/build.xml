@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="BARCODEStatusReport" default="default" basedir=".">
+    <description>Builds, tests, and runs the project BARCODEStatusReport.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <property file="build.properties" />
+    
+    <!-- excluding license file + modifying configuration file -->
+    <!-- in order to work comment the target "-pre-dist" and make a new build -->  
+<!--    <target name="-pre-dist">
+        <delete file="${product.dir.conf.build}/license.txt" />
+        <delete file="${product.dir.conf.build}/config.properties" />
+        <copy file="${product.dir.conf.dist}/config.properties" tofile="${product.dir.conf.build}/config.properties" />
+    </target>-->
+    
+    <target name="-post-dist">
+        <basename file="${dist.war}" property="dist.warfile" suffix=".war"/>
+        <property file="${product.dir.jarProps}"/> 
+<!--        <jar destfile="${basedir}/dist/${ant.project.name}.war" update="true">
+            <fileset file="${product.dir.jar}/${product.jar.name}_version.txt" />
+        </jar> -->
+        
+        <jar destfile="${basedir}/dist/${ant.project.name}.war" basedir="${dir.build.web}" excludes="**/conf/**">
+            <fileset file="${product.dir.jar}/${product.jar.name}_version.txt" />
+        </jar> 
+        <jar destfile="${basedir}/dist/${ant.project.name}.war" update="true">  
+           <fileset dir="${basedir}/src/barcodeserver" />              
+        </jar> 
+        
+        <copy file="${product.dir.jar}/${product.jar.name}_version.html" tofile="${product.dir.deploy}/${product.jar.name}_version.html"/>
+        <copy file="${product.dir.jar}/${product.jar.name}_version.txt" tofile="${product.dir.deploy}/${product.jar.name}_version.txt"/>
+        <copy file="${basedir}/dist/${ant.project.name}.war" tofile="${product.dir.deploy}/${product.jar.name}.war"/>
+        <copy file="${basedir}/dist/${ant.project.name}.war" tofile="${product.dir.deploy}/${product.jar.name}_${app.build}.war"/>
+    </target>
+    
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0"  encoding="utf-8" ?>
+<eloupdatelist ver="1.0">
+<obj>
+<desc value="Testdatei #{index}"/>
+<idate value=""/>
+<xdate value="#{xdate}"/>
+<type value="#{mask}"/>
+<acl>
+</acl>
+<memo>Ein Test mit \n zwei Zeilen</memo>
+<indexlist>
+#{indexlist}
+</indexlist>
+<destlist>
+#{destlist}
+</destlist>
+<recipientlist>
+  #{recipientlist}
+</recipientlist>
+<Senddocumentbymail />
+<docfile name="#{filepath}" />
+</obj>
+</eloupdatelist>

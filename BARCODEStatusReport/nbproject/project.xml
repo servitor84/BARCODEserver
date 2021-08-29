@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.web.project</type>
+    <configuration>
+        <data xmlns="http://www.netbeans.org/ns/web-project/3">
+            <name>BARCODEStatusReport</name>
+            <minimum-ant-version>1.6.5</minimum-ant-version>
+            <web-module-libraries>
+                <library dirs="200">
+                    <file>${libs.absolutelayout.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${libs.jstl.classpath}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.LicenseCheck.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.UIGenerator.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.appframework-1.0.3.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.commons-codec-1.6.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.BARCODEserver.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.commons-io-2.4.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.commons-lang3-3.1.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.commons-logging-1.1.1.jar-1}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.itext-2.1.7.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.EloixClient.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.DokInform.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.log4j-1.2.15.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.standard.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.swing-worker-1.1.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.pdfbox-app-1.8.2.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.javautils.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.slf4j-api-1.7.25.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.slf4j-simple-1.7.25.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.sun-jai_codec.jar}</file>
+                    <path-in-war>WEB-INF/lib</path-in-war>
+                </library>
+            </web-module-libraries>
+            <web-module-additional-libraries>
+                <library dirs="200">
+                    <file>${file.reference.BARCODEStatusReport-profiles_build}</file>
+                    <path-in-war>/profiles</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${file.reference.BARCODEStatusReport-conf_build}</file>
+                    <path-in-war>/</path-in-war>
+                </library>
+                <library dirs="200">
+                    <file>${reference.BCS_Config.jar}</file>
+                    <path-in-war>/WEB-INF</path-in-war>
+                </library>
+            </web-module-additional-libraries>
+            <source-roots>
+                <root id="src.dir"/>
+            </source-roots>
+            <test-roots>
+                <root id="test.src.dir"/>
+            </test-roots>
+        </data>
+        <libraries xmlns="http://www.netbeans.org/ns/cdnjs-libraries/1"/>
+        <references xmlns="http://www.netbeans.org/ns/ant-project-references/1">
+            <reference>
+                <foreign-project>BCS_Config</foreign-project>
+                <artifact-type>jar</artifact-type>
+                <script>build.xml</script>
+                <target>jar</target>
+                <clean-target>clean</clean-target>
+                <id>jar</id>
+            </reference>
+        </references>
+    </configuration>
+</project>

@@ -1,0 +1,51 @@
+Versionsgeschichte DOKinform BCS_Config
+===================================================================
+
+2.0.0  (build 00436)    26.07.2021    TIF docs are also processed if SearchMode has the entry "First". A new library is used for TIF docs.
+2.0.0  (build 00434)    21.05.2021    Jars + Versionen angepasst
+2.0.0  (build 00423)    27.01.2021    DesEncription entfernt
+2.0.0  (build 00422)    26.01.2021    Die Verbindung mit IX ausgeschaltet. Masken aus Datei lesen V2
+2.0.0  (build 00421)    22.01.2021    Die Verbindung mit IX ausgeschaltet. Masken aus Datei lesen V3
+2.0.0  (build 00419)    21.01.2021    Die Verbindung mit IX ausgeschaltet. Masken aus Datei lesen V2
+2.0.0  (build 00418)    20.01.2021    Die Verbindung mit IX ausgeschaltet. Masken aus Datei lesen
+2.0.0  (build 00416)    03.06.2020    Tempfile Name zurücksetzen - Um Fehler zu verhindern (has no physical document)
+2.0.0  (build 00415)    26.03.2020    if barcode has slash as part, then replace slash with empty symbol in the filename
+2.0.0  (build 00413)    25.02.2020    PWD Entschlüßelung
+2.0.0  (build 00412)    25.02.2020    PWD Verschlüßelung
+2.0.0  (build 00409)    23.01.2020    Deleting PDF file from Temp-folder also in case when it's damaged. File name with GUID
+2.0.0  (build 00408)    22.11.2019    Verbindung mit IX nicht mehr anhand DOKinform Lib sondern, eigene Klasse
+2.0.0  (build 00402)    11.10.2019    DOKinform Lib für BC angepasst
+2.0.0  (build 00393)    08.07.2019    Profile vom selben Typ; zweites wird nicht betrachtet => behoben
+2.0.0  (build 00392)    14.05.2019    Auch Masken mit Ordner Masken in ELO11/ELO12 werden angezeigt
+2.0.0  (build 00386)    12.02.2019    RadioButton für das Wort, das in Code vorhanden/NICHT vorhanden sein darf + QRCode
+2.0.0  (build 00384)    12.02.2019    QRCode Lesen + Codes überspringen wenn RegEx enthalten/NICHT enthalten ist + Nur erste Seite lesen
+2.0.0  (build 00379)    17.05.2018    angepasst für RegEx zum Ausschliessen von Barcodes (in Jar)
+2.0.0  (build 00378)    17.05.2018    Feld für RegEx
+2.0.0  (build 00377)    15.05.2018    endless loop i.e. for MSG files removed + Barcode filtering with regex + mask with object by log report replaced
+2.0.0  (build 00376)    14.05.2018    possibility - with the help of the definition of the characters in profile  BATCHREADER - to exclude barcodes
+2.0.0  (build 00373)    03.05.2018    Konfigurator aktualisiert
+2.0.0  (build 00372)    03.05.2018    Checkbox in profile tab added to set the property (HidePagesNrByKeywording) if the pages have to be shown or not
+2.0.0  (build 00370)    15.03.2018    weitere Bearbeitung der Seitennummern Anzeigen/löschen in das Indexfield Barcodes
+2.0.0  (build 00364)    15.03.2018    pages number as value of the field barcodes can be hided when the corresponding property in the config file (SchowPagesNrByKeywording) is true
+2.0.0  (build 00363)    15.03.2018    pages number as value of the field barcodes can be hided when the corresponding property in the config file (SchowPagesNrByKeywording) is true
+2.0.0  (build 00362)    15.03.2018    pages number as value of the field barcodes can be hided when the corresponding property in the config file (SchowPagesNrByKeywording) is true
+2.0.0  (build 00352)    20.02.2018    Adding configurator by build process
+2.0.0  (build 00349)    20.02.2018    Adding configurator by build process
+2.0.0  (build 00347)    20.02.2018    Adding configurator by build process
+2.0.0  (build 00345)    20.02.2018    Adding configurator by build process
+2.0.0  (build 00343)    20.02.2018    Configurator added by building the war
+2.0.0  (build 00335)    20.11.2017    security constraint added
+2.0.0  (build 00284)    15.11.2017    arivato => di
+2.0.0  (build 00280)    14.11.2017    arivato => di
+2.0.0  (build 00257)    07.09.2017    Fix: Txt and Sig file were not generated in SSM
+2.0.0  (build 00255)    07.09.2017    Using pdfbox instead of itext
+2.0.0  (build 00244)    19.06.2017    Reverted to itext-2.1.7
+2.0.0  (build 00240)    01.06.2017    Fix for bug report 2017-05-30: landscape pages were rendered in portrait mode in SSM profile
+2.0.0  (build 00238)    01.06.2017    Fix for bug report 2017-05-30: pdf landscape pages are rendered in portrait mode in SSM profile
+2.0.0  (build 00235)    04.05.2017    Bug fix: Barcode types checkbox modifications are not saved in the profile properties file
+2.0.0  (build 00229)    19.09.2016    Added TemporaryDirectory setting in General settings
+2.0.0  (build 00228)    22.07.2016    Solved bug 88 + 89
+2.0.0  (build 00228)    22.07.2016    Bug 88 + 89
+2.0.0     10.05.2016    Solved property setting 'ResultStatusOk'
+2.0.0     10.05.2016    test
+2.0.0     10.05.2016    Solved 
